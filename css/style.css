@@ -1,0 +1,122 @@
+/* Tab buttons */
+.tabs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tabs .tab-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.tabs .tab-button:hover {
+    background-color: #e0e0e0;
+}
+
+.tabs .tab-button.active {
+    background-color: #fff;
+    color: #000;
+    border-bottom-color: #fff;
+}
+
+/* Tab content panels */
+.tab-content {
+    background-color: #fff;
+    border-radius: 0 5px 5px 5px;
+}
+
+.tab-content .tab-panel {
+    display: none;
+}
+
+.tab-content .tab-panel.active {
+    display: block;
+    margin-top: 10px;
+}
+ */
+
+ /* Vertical Tabs container */
+.vertical-tabs {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* Adjust as needed */
+}
+
+/* Horizontal Tabs container */
+.horizontal-tabs {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Common styles for tab buttons */
+.tab-button {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #e0e0e0;
+}
+
+.tab-button.active {
+    background-color: #fff;
+    border-bottom-color: #fff;
+}
+
+/* Horizontal Tabs specific styles */
+.horizontal-tabs .tab-button {
+    flex: 1;
+    text-align: center;
+}
+
+/* Vertical Tabs specific styles */
+.vertical-tabs {
+    display: flex;
+    gap: 20px;
+}
+.vertical-tabs .tab-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.vertical-tabs .tab-content {
+    width: 75%;
+}
+.vertical-tabs .tab-buttons .tab-button {
+    margin-bottom: 5px;
+}
+
+/* Tab content panels */
+.tab-content {
+    overflow: hidden;
+}
+
+.tab-panel {
+    display: none;
+    padding: 20px;
+    border-top: none;
+    border-radius: 0 5px 5px 5px;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+button.tab-button.active {
+    color: #000;
+}
